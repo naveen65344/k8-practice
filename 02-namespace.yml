@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: biography
+  namespace: shelf-2
+spec:
+ containers:
+   - name: nginx
+     image: nginx  
