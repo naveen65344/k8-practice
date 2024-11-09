@@ -1,9 +1,9 @@
 apiVersion: v1
-kind: Pod
+kind: ResourceQuota
 metadata:
-  name: cricket
-  namespace: shelf-1
+  name: dev-quota        # The name of the quota
+  namespace: dev         # This quota applies to the 'dev' namespace
 spec:
-  containers:
-   -  name: nginx
-      image: nginx  
+  hard:
+    requests.cpu: "2"    # Total CPU the dev namespace can use (2 CPUs max)
+    requests.memory: 4Gi # Total memory the dev namespace can use (4GB max)
