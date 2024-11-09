@@ -7,7 +7,4 @@ spec:
   containers:
   - name: another-container
     image: nginx
-    resources:
-      requests:
-        cpu: "2"      # This pod asks for 2 CPUs
-        memory: "3Gi" # This pod asks for 3GB memory
+    
