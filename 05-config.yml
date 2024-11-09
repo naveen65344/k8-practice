@@ -1,7 +1,8 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
- name: config
+  name: app-settings
 data:
-  name: naveen
-  course: devops321 
+  DATABASE_HOST: "localhost"
+  DATABASE_PORT: "5432"
+  API_KEY: "my-secret-api-key"
