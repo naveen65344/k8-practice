@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: dev-app
-       # Here, we are specifying the namespace (shelf)
+  namespace: dev     # Here, we are specifying the namespace (shelf)
 spec:
   containers:
     - name: dev-container
