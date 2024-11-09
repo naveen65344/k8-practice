@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ResourceQuota
 metadata:
-  name: dev-quota        # The name of the quota
+  name: dev-quota1        # The name of the quota
   namespace: dev         # This quota applies to the 'dev' namespace
 spec:
   hard:
