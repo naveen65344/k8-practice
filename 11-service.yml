@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: my-clusterip-service
 spec:
-  type: ClusterIP  # Default type, internal access only within the cluster
+  type: NodePort  # Default type, internal access only within the cluster
   selector:
     app: my-app  # This selects the pods with the label app=my-app
   ports:
