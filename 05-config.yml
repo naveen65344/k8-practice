@@ -1,8 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: app-settings
+  name: simple-config
 data:
-  DATABASE_HOST: "localhost"
-  DATABASE_PORT: "5432"
-  API_KEY: "my-secret-api-key"
+  key1: naveen
+  key2: raju
