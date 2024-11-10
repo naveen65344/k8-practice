@@ -8,4 +8,4 @@ spec:
     image: nginx:latest
     envFrom:
     - configMapRef:
-        name: app-settings
+        name: simple-config
